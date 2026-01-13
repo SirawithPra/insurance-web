@@ -218,7 +218,7 @@ export function NeedsAnalysisPage() {
 
       <button
         onClick={() => setStep(2)}
-        className="w-full bg-linear-to-r from-blue-600 to-blue-700 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
+        className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
       >
         ถัดไป: ข้อมูลทางการเงิน
         <ChevronRight size={20} />
@@ -389,7 +389,7 @@ export function NeedsAnalysisPage() {
         </button>
         <button
           onClick={() => setStep(3)}
-          className="flex-1 bg-linear-to-r from-green-600 to-green-700 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
+          className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
         >
           ถัดไป: ครอบครัวและสุขภาพ
           <ChevronRight size={20} />
@@ -589,7 +589,7 @@ export function NeedsAnalysisPage() {
         </button>
         <button
           onClick={handleCalculate}
-          className="flex-1 bg-linear-to-r from-purple-600 to-indigo-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
+          className="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
         >
           <Calculator size={20} />
           วิเคราะห์ความต้องการ
@@ -608,7 +608,7 @@ export function NeedsAnalysisPage() {
     return (
       <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4">
         {/* Success Header */}
-        <div className="bg-linear-to-r from-indigo-600 to-purple-600 text-white rounded-3xl p-8 text-center">
+        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-3xl p-8 text-center">
           <Sparkles className="w-16 h-16 mx-auto mb-4" />
           <h2 className="text-3xl font-black mb-2">การวิเคราะห์เสร็จสมบูรณ์!</h2>
           <p className="text-indigo-100">
@@ -818,7 +818,7 @@ export function NeedsAnalysisPage() {
           </button>
           <button
             onClick={() => window.print()}
-            className="flex-1 bg-linear-to-r from-indigo-600 to-purple-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all"
+            className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all"
           >
             พิมพ์ผลการวิเคราะห์
           </button>

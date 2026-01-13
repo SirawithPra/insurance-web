@@ -84,6 +84,14 @@ export function AccidentPlanPage() {
               </div>
             </div>
 
+            {/* AIA Reference */}
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center">
+              <p className="text-xs text-slate-600">
+                <span className="font-bold">ข้อมูลอ้างอิง:</span> แผนจำลองจากหลักการของ{' '}
+                <span className="font-bold text-amber-600">AIA PA Guardian</span>
+              </p>
+            </div>
+
             {/* Coverage Details */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-red-50 border border-red-200 rounded-2xl p-6 text-center">

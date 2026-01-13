@@ -31,7 +31,7 @@ export function LifeProtectionPage() {
             ทุนประกันชีวิตที่<span className="text-red-600">เหมาะสม</span>
           </h1>
           <p className="text-lg text-slate-600">
-            คำนวณค่าขยุง x10 - มาตรฐานสากลที่ใช้วัดความเพียงพอของการคุ้มครอง
+            คำนวณจากรายได้ x10 - มาตรฐานสากลที่ใช้วัดความเพียงพอของการคุ้มครอง
           </p>
         </div>
 
@@ -155,8 +155,17 @@ export function LifeProtectionPage() {
               </div>
             </div>
 
+            {/* AIA Reference */}
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center">
+              <p className="text-xs text-slate-600">
+                <span className="font-bold">ข้อมูลอ้างอิง:</span> การคำนวณทุนประกันอ้างอิงจากหลักการวางแผนการเงินสากล และผลิตภัณฑ์ที่เกี่ยวข้องเช่น{' '}
+                <span className="font-bold text-red-600">AIA 20/99 WLN (Whole Life)</span> หรือ{' '}
+                <span className="font-bold text-red-600">AIA Term Protection</span>
+              </p>
+            </div>
+
             {/* Tip Card */}
-            <div className="bg-linear-to-r from-amber-50 to-orange-50 border-2 border-amber-300 p-6 rounded-2xl">
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 p-6 rounded-2xl">
               <p className="text-sm text-amber-900 leading-relaxed">
                 <span className="font-black">💡 เคล็ดลับ:</span> ประกันชีวิตแบบ Term Life 
                 ให้ความคุ้มครองสูงสุดในราคาประหยัด เหมาะสำหรับหัวหน้าครอบครัวที่ต้องการทุนสูง
