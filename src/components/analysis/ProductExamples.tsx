@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Shield, Heart, Zap, Wallet, AlertTriangle, Info } from 'lucide-react';
 import { formatCurrency } from '../../utils/formatters';
 import type { CoverageEstimate, PremiumEstimate } from '../../types/analysis';
@@ -52,7 +52,7 @@ export const ProductExamples: React.FC<ProductExamplesProps> = ({
     <div className={`space-y-6 ${className}`}>
       <div className="bg-indigo-50 border-2 border-indigo-200 rounded-2xl p-6">
         <div className="flex items-start gap-3">
-          <Info className="w-6 h-6 text-indigo-600 flex-shrink-0 mt-0.5" />
+          <Info className="w-6 h-6 text-indigo-600 shrink-0 mt-0.5" />
           <div>
             <h3 className="font-bold text-indigo-900 mb-2">
               ตัวอย่างผลิตภัณฑ์ประกันภัย (Product Examples)
@@ -332,7 +332,7 @@ export const ProductExamples: React.FC<ProductExamplesProps> = ({
       </div>
 
       {/* Summary Tips */}
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200 rounded-2xl p-6">
+      <div className="bg-linear-to-r from-blue-50 to-purple-50 border-2 border-blue-200 rounded-2xl p-6">
         <h4 className="font-bold text-slate-900 mb-3">💡 เคล็ดลับการเลือกซื้อ</h4>
         <div className="space-y-2 text-sm text-slate-700">
           <p>

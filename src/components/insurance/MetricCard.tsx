@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { LucideIcon } from 'lucide-react';
 
 interface MetricCardProps {
@@ -39,7 +39,7 @@ export function MetricCard({
   return (
     <div className="bg-white p-6 rounded-2xl border border-slate-200">
       <div className="flex items-start gap-4">
-        <div className={`w-12 h-12 ${colorClasses[color]} rounded-xl flex items-center justify-center flex-shrink-0`}>
+        <div className={`w-12 h-12 ${colorClasses[color]} rounded-xl flex items-center justify-center shrink-0`}>
           <Icon size={24} />
         </div>
         

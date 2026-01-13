@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MainLayout } from '../components/layout/MainLayout';
 import { SEOHead } from '../components/layout/SEOHead';
 import { ProgressSteps } from '../components/analysis/ProgressSteps';
@@ -97,7 +97,7 @@ export function NeedsAnalysisPage() {
     <div className="space-y-6 animate-in fade-in slide-in-from-right-4">
       <div className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-6">
         <div className="flex items-start gap-3">
-          <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+          <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center shrink-0">
             <Info className="text-blue-600" size={24} />
           </div>
           <div>
@@ -218,7 +218,7 @@ export function NeedsAnalysisPage() {
 
       <button
         onClick={() => setStep(2)}
-        className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
+        className="w-full bg-linear-to-r from-blue-600 to-blue-700 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
       >
         ถัดไป: ข้อมูลทางการเงิน
         <ChevronRight size={20} />
@@ -231,7 +231,7 @@ export function NeedsAnalysisPage() {
     <div className="space-y-6 animate-in fade-in slide-in-from-right-4">
       <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-6">
         <div className="flex items-start gap-3">
-          <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+          <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center shrink-0">
             <TrendingUp className="text-green-600" size={24} />
           </div>
           <div>
@@ -389,7 +389,7 @@ export function NeedsAnalysisPage() {
         </button>
         <button
           onClick={() => setStep(3)}
-          className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
+          className="flex-1 bg-linear-to-r from-green-600 to-green-700 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
         >
           ถัดไป: ครอบครัวและสุขภาพ
           <ChevronRight size={20} />
@@ -403,7 +403,7 @@ export function NeedsAnalysisPage() {
     <div className="space-y-6 animate-in fade-in slide-in-from-right-4">
       <div className="bg-purple-50 border-2 border-purple-200 rounded-2xl p-6">
         <div className="flex items-start gap-3">
-          <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+          <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center shrink-0">
             <Shield className="text-purple-600" size={24} />
           </div>
           <div>
@@ -589,7 +589,7 @@ export function NeedsAnalysisPage() {
         </button>
         <button
           onClick={handleCalculate}
-          className="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
+          className="flex-1 bg-linear-to-r from-purple-600 to-indigo-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
         >
           <Calculator size={20} />
           วิเคราะห์ความต้องการ
@@ -608,7 +608,7 @@ export function NeedsAnalysisPage() {
     return (
       <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4">
         {/* Success Header */}
-        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-3xl p-8 text-center">
+        <div className="bg-linear-to-r from-indigo-600 to-purple-600 text-white rounded-3xl p-8 text-center">
           <Sparkles className="w-16 h-16 mx-auto mb-4" />
           <h2 className="text-3xl font-black mb-2">การวิเคราะห์เสร็จสมบูรณ์!</h2>
           <p className="text-indigo-100">
@@ -643,7 +643,7 @@ export function NeedsAnalysisPage() {
         {results.taxSavings > 0 && (
           <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-6">
             <div className="flex items-start gap-3">
-              <TrendingUp className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+              <TrendingUp className="w-6 h-6 text-amber-600 shrink-0 mt-0.5" />
               <div>
                 <strong className="text-amber-900">ประมาณการประหยัดภาษี:</strong>
                 <span className="text-amber-800 ml-2">
@@ -774,7 +774,7 @@ export function NeedsAnalysisPage() {
         {/* Methodology */}
         <div className="bg-indigo-50 border-2 border-indigo-200 rounded-2xl p-6">
           <div className="flex items-start gap-3">
-            <Shield className="w-6 h-6 text-indigo-600 flex-shrink-0 mt-0.5" />
+            <Shield className="w-6 h-6 text-indigo-600 shrink-0 mt-0.5" />
             <div className="text-sm text-indigo-900">
               <strong className="block mb-2">วิธีการวิเคราะห์:</strong>
               <ul className="space-y-1 text-xs text-indigo-800">
@@ -801,7 +801,7 @@ export function NeedsAnalysisPage() {
         {/* Disclaimer */}
         <div className="bg-yellow-50 border-2 border-yellow-300 rounded-2xl p-6">
           <div className="flex items-start gap-3">
-            <AlertCircle className="w-6 h-6 text-yellow-700 flex-shrink-0 mt-0.5" />
+            <AlertCircle className="w-6 h-6 text-yellow-700 shrink-0 mt-0.5" />
             <div className="text-xs text-yellow-900 whitespace-pre-line">
               {DISCLAIMER_TEXT}
             </div>
@@ -818,7 +818,7 @@ export function NeedsAnalysisPage() {
           </button>
           <button
             onClick={() => window.print()}
-            className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all"
+            className="flex-1 bg-linear-to-r from-indigo-600 to-purple-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition-all"
           >
             พิมพ์ผลการวิเคราะห์
           </button>
@@ -853,7 +853,7 @@ export function NeedsAnalysisPage() {
         {/* Privacy Note */}
         <div className="bg-slate-50 border-2 border-slate-200 rounded-2xl p-4">
           <div className="flex items-start gap-3">
-            <Lock className="w-5 h-5 text-slate-600 flex-shrink-0 mt-0.5" />
+            <Lock className="w-5 h-5 text-slate-600 shrink-0 mt-0.5" />
             <div className="text-sm text-slate-700 whitespace-pre-line">
               {PRIVACY_NOTE}
             </div>

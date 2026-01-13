@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { CheckCircle2, AlertCircle } from 'lucide-react';
 import type { TaxExpense, DeductionLevel } from '../../types/insurance';
 
@@ -83,9 +83,9 @@ export function TaxOptimizer({
       }`}>
         <div className="flex items-start gap-3">
           {isSuitable ? (
-            <CheckCircle2 className="text-green-600 flex-shrink-0 mt-0.5" size={20} />
+            <CheckCircle2 className="text-green-600 shrink-0 mt-0.5" size={20} />
           ) : (
-            <AlertCircle className="text-amber-600 flex-shrink-0 mt-0.5" size={20} />
+            <AlertCircle className="text-amber-600 shrink-0 mt-0.5" size={20} />
           )}
           
           <div className="space-y-2">

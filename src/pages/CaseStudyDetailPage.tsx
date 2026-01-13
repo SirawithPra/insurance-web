@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useParams, Link } from 'react-router-dom';
 import { MainLayout } from '../components/layout/MainLayout';
 import { SEOHead } from '../components/layout/SEOHead';
@@ -82,7 +82,7 @@ export function CaseStudyDetailPage() {
           <h2 className="text-2xl font-black text-slate-900 mb-6">ข้อมูลลูกค้า</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex items-start gap-3">
-              <div className="w-12 h-12 bg-purple-200 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-purple-200 rounded-xl flex items-center justify-center shrink-0">
                 <User className="text-purple-700" size={24} />
               </div>
               <div>
@@ -92,7 +92,7 @@ export function CaseStudyDetailPage() {
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="w-12 h-12 bg-blue-200 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-blue-200 rounded-xl flex items-center justify-center shrink-0">
                 <User className="text-blue-700" size={24} />
               </div>
               <div>
@@ -102,7 +102,7 @@ export function CaseStudyDetailPage() {
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="w-12 h-12 bg-emerald-200 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-emerald-200 rounded-xl flex items-center justify-center shrink-0">
                 <Briefcase className="text-emerald-700" size={24} />
               </div>
               <div>
@@ -116,7 +116,7 @@ export function CaseStudyDetailPage() {
         {/* Problem */}
         <div className="bg-red-50 rounded-3xl p-8 border-2 border-red-200">
           <div className="flex items-start gap-4 mb-4">
-            <div className="w-14 h-14 bg-red-200 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <div className="w-14 h-14 bg-red-200 rounded-2xl flex items-center justify-center shrink-0">
               <AlertCircle className="text-red-700" size={28} />
             </div>
             <div>
@@ -129,7 +129,7 @@ export function CaseStudyDetailPage() {
         {/* Solution */}
         <div className="bg-amber-50 rounded-3xl p-8 border-2 border-amber-200">
           <div className="flex items-start gap-4 mb-4">
-            <div className="w-14 h-14 bg-amber-200 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <div className="w-14 h-14 bg-amber-200 rounded-2xl flex items-center justify-center shrink-0">
               <Lightbulb className="text-amber-700" size={28} />
             </div>
             <div>
@@ -142,7 +142,7 @@ export function CaseStudyDetailPage() {
         {/* Result */}
         <div className="bg-emerald-50 rounded-3xl p-8 border-2 border-emerald-200">
           <div className="flex items-start gap-4 mb-4">
-            <div className="w-14 h-14 bg-emerald-200 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <div className="w-14 h-14 bg-emerald-200 rounded-2xl flex items-center justify-center shrink-0">
               <CheckCircle className="text-emerald-700" size={28} />
             </div>
             <div>
@@ -159,7 +159,7 @@ export function CaseStudyDetailPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center shrink-0">
                 <DollarSign className="text-purple-600" size={32} />
               </div>
               <div>
@@ -171,7 +171,7 @@ export function CaseStudyDetailPage() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center shrink-0">
                 <Shield className="text-emerald-600" size={32} />
               </div>
               <div>
@@ -203,7 +203,7 @@ export function CaseStudyDetailPage() {
         )}
 
         {/* CTA */}
-        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl p-8 text-center text-white">
+        <div className="bg-linear-to-r from-purple-600 to-indigo-600 rounded-3xl p-8 text-center text-white">
           <h3 className="text-2xl font-black mb-3">
             ต้องการคำปรึกษาแบบเดียวกันนี้?
           </h3>

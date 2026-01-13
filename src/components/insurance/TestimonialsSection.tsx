@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Star, CheckCircle, MapPin, Calendar, MessageSquarePlus } from 'lucide-react';
 import { Testimonial } from '../../types';
 import { TestimonialForm } from './TestimonialForm';
@@ -128,7 +128,7 @@ export const TestimonialsSection: React.FC<TestimonialsProps> = ({
               <div className="border-t border-gray-100 pt-4">
                 <div className="flex items-start gap-3">
                   {/* Avatar */}
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-semibold text-lg flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-semibold text-lg shrink-0">
                     {testimonial.name.charAt(2)}
                   </div>
 

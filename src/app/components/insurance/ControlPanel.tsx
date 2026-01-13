@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Slider } from '../ui/slider';
 
 interface SliderControlProps {

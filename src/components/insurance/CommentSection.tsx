@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MessageCircle, Send, Star } from 'lucide-react';
 import { useComments } from '../../hooks';
 import { formatDate } from '../../utils';
@@ -46,7 +46,7 @@ export function CommentSection({ articleId }: CommentSectionProps) {
       </div>
 
       {/* Comment Form */}
-      <form onSubmit={handleSubmit} className="bg-white p-6 rounded-3xl border border-slate-200 space-y-4">
+      <form onSubmit={handleSubmit} className="bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 space-y-4">
         <div className="space-y-2">
           <label className="text-sm font-bold text-slate-700">ชื่อของคุณ</label>
           <input
@@ -54,7 +54,7 @@ export function CommentSection({ articleId }: CommentSectionProps) {
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
             placeholder="ระบุชื่อ..."
-            className="w-full px-4 py-3 border border-slate-200 rounded-2xl focus:border-red-500 focus:ring-2 focus:ring-red-100 outline-none transition-all"
+            className="w-full px-4 py-3 border border-slate-200 rounded-2xl focus:border-red-500 focus:ring-4 focus:ring-red-50 outline-none transition-all"
             required
           />
         </div>
@@ -66,7 +66,7 @@ export function CommentSection({ articleId }: CommentSectionProps) {
             onChange={(e) => setContent(e.target.value)}
             placeholder="แบ่งปันความคิดเห็นของคุณ..."
             rows={4}
-            className="w-full px-4 py-3 border border-slate-200 rounded-2xl focus:border-red-500 focus:ring-2 focus:ring-red-100 outline-none transition-all resize-none"
+            className="w-full px-4 py-3 border border-slate-200 rounded-2xl focus:border-red-500 focus:ring-4 focus:ring-red-50 outline-none transition-all resize-none"
             required
           />
         </div>

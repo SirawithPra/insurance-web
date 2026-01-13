@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { MainLayout } from '../components/layout/MainLayout';
 import { Phone, MessageCircle, Users, Award, ShieldCheck } from 'lucide-react';
 import { SEOHead } from '../components/layout/SEOHead';
@@ -82,20 +82,26 @@ export function ContactPage() {
 
         {/* Additional Info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-blue-50 border border-blue-200 p-6 rounded-2xl text-center">
-            <Users className="text-blue-600 mx-auto mb-3" size={32} />
+          <div className="bg-white border border-blue-100 p-8 rounded-3xl text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+            <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <Users className="text-blue-600" size={32} />
+            </div>
             <h4 className="font-black text-blue-900 mb-2">ปรึกษาฟรี</h4>
             <p className="text-sm text-blue-700">ไม่มีค่าใช้จ่ายในการปรึกษา</p>
           </div>
 
-          <div className="bg-emerald-50 border border-emerald-200 p-6 rounded-2xl text-center">
-            <Award className="text-emerald-600 mx-auto mb-3" size={32} />
+          <div className="bg-white border border-emerald-100 p-8 rounded-3xl text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+            <div className="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <Award className="text-emerald-600" size={32} />
+            </div>
             <h4 className="font-black text-emerald-900 mb-2">มืออาชีพ</h4>
             <p className="text-sm text-emerald-700">ที่ปรึกษาได้รับใบอนุญาตถูกต้อง</p>
           </div>
 
-          <div className="bg-purple-50 border border-purple-200 p-6 rounded-2xl text-center">
-            <ShieldCheck className="text-purple-600 mx-auto mb-3" size={32} />
+          <div className="bg-white border border-purple-100 p-8 rounded-3xl text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+            <div className="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <ShieldCheck className="text-purple-600" size={32} />
+            </div>
             <h4 className="font-black text-purple-900 mb-2">โปร่งใส</h4>
             <p className="text-sm text-purple-700">ข้อมูลชัดเจน ไม่มีกลฉ้อฉล</p>
           </div>

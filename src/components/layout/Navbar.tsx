@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ShieldCheck, Menu, X, Home, Pyramid, Wallet, HeartPulse, Zap, BookOpen, Phone, Calculator } from 'lucide-react';
 import { ROUTES } from '../../constants/routes';

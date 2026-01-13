@@ -92,7 +92,7 @@ pnpm type-check
 
 ```tsx
 // src/components/MyComponent.tsx
-import React from 'react';
+
 
 interface MyComponentProps {
   title: string;
@@ -234,7 +234,7 @@ git commit -m "feat: add my feature"
 ## ❓ FAQ
 
 **Q: ต้องรู้อะไรบ้างก่อนเริ่ม?**
-A: React, TypeScript, และ Tailwind CSS พื้นฐาน
+A: TypeScript, และ Tailwind CSS พื้นฐาน
 
 **Q: ใช้ IDE อะไรดี?**
 A: VSCode พร้อม extensions: ESLint, Prettier, Tailwind CSS IntelliSense

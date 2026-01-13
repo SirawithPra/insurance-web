@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Check, X, ChevronRight, LucideIcon } from 'lucide-react';
 
 interface InsuranceCardProps {
@@ -48,7 +48,7 @@ export function InsuranceCard({
           <ul className="space-y-2">
             {pros.map((pro, index) => (
               <li key={index} className="text-sm text-slate-700 flex items-start gap-2">
-                <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0" />
+                <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 shrink-0" />
                 <span>{pro}</span>
               </li>
             ))}
@@ -64,7 +64,7 @@ export function InsuranceCard({
           <ul className="space-y-2">
             {cons.map((con, index) => (
               <li key={index} className="text-sm text-slate-700 flex items-start gap-2">
-                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
+                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-2 shrink-0" />
                 <span>{con}</span>
               </li>
             ))}

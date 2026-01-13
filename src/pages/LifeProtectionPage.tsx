@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MainLayout } from '../components/layout/MainLayout';
 import { SEOHead } from '../components/layout/SEOHead';
 import { InlineConsultCTA } from '../components/cta/InlineConsultCTA';
@@ -156,7 +156,7 @@ export function LifeProtectionPage() {
             </div>
 
             {/* Tip Card */}
-            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 p-6 rounded-2xl">
+            <div className="bg-linear-to-r from-amber-50 to-orange-50 border-2 border-amber-300 p-6 rounded-2xl">
               <p className="text-sm text-amber-900 leading-relaxed">
                 <span className="font-black">💡 เคล็ดลับ:</span> ประกันชีวิตแบบ Term Life 
                 ให้ความคุ้มครองสูงสุดในราคาประหยัด เหมาะสำหรับหัวหน้าครอบครัวที่ต้องการทุนสูง

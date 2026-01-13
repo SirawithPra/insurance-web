@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { MessageCircle, Phone, CheckCircle2, Clock, Shield } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes';
@@ -16,9 +16,9 @@ export function InlineConsultCTA({
 
   if (variant === 'subtle') {
     return (
-      <div className="bg-gradient-to-r from-slate-50 to-blue-50 border border-blue-200 rounded-2xl p-6">
+      <div className="bg-linear-to-r from-slate-50 to-blue-50 border border-blue-200 rounded-2xl p-6">
         <div className="flex items-start gap-4">
-          <div className="bg-blue-600 rounded-full p-3 flex-shrink-0">
+          <div className="bg-blue-600 rounded-full p-3 shrink-0">
             <MessageCircle className="text-white" size={24} />
           </div>
           <div className="flex-1">

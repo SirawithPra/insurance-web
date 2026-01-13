@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MainLayout } from '../components/layout/MainLayout';
 import { SEOHead } from '../components/layout/SEOHead';
 import { FAQSection } from '../components/insurance/FAQSection';
-import { TestimonialsSection } from '../components/insurance/TestimonialsSection';
+// import { TestimonialsSection } from '../components/insurance/TestimonialsSection';
 import { RelatedArticles } from '../components/insurance/RelatedArticles';
 import { InlineConsultCTA } from '../components/cta/InlineConsultCTA';
 import { SEO_CONFIG } from '../constants/seo';
 import { ROUTES } from '../constants/routes';
-import { PA_PLANS, ACCIDENT_PLAN_FAQS, ACCIDENT_PLAN_TESTIMONIALS, ARTICLES } from '../constants';
+import { PA_PLANS, ACCIDENT_PLAN_FAQS, ARTICLES } from '../constants';
 import { getRelatedArticles } from '../utils';
 import { Zap, Shield, Stethoscope, Check, CheckCircle2, AlertCircle } from 'lucide-react';
 import { formatCurrency } from '../utils/formatters';
@@ -60,7 +60,7 @@ export function AccidentPlanPage() {
                       </p>
                     </div>
                     {isSelected && (
-                      <Check className="text-amber-500 flex-shrink-0" size={24} />
+                      <Check className="text-amber-500 shrink-0" size={24} />
                     )}
                   </div>
                   <p className={`text-xs mt-2 ${isSelected ? 'text-slate-300' : 'text-slate-500'}`}>
@@ -107,19 +107,19 @@ export function AccidentPlanPage() {
               </h4>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2">
-                  <Check size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
+                  <Check size={18} className="text-amber-600 shrink-0 mt-0.5" />
                   <span>เสียชีวิตจากอุบัติเหตุ</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
+                  <Check size={18} className="text-amber-600 shrink-0 mt-0.5" />
                   <span>สูญเสียอวัยวะ</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
+                  <Check size={18} className="text-amber-600 shrink-0 mt-0.5" />
                   <span>ทุพพลภาพถาวร</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
+                  <Check size={18} className="text-amber-600 shrink-0 mt-0.5" />
                   <span>ค่ารักษาพยาบาลจากอุบัติเหตุ</span>
                 </li>
               </ul>
@@ -160,7 +160,7 @@ export function AccidentPlanPage() {
         <FAQSection faqs={ACCIDENT_PLAN_FAQS} />
 
         {/* Testimonials Section */}
-        <TestimonialsSection testimonials={ACCIDENT_PLAN_TESTIMONIALS} />
+        {/* <TestimonialsSection testimonials={ACCIDENT_PLAN_TESTIMONIALS} /> */}
 
         {/* Related Articles */}
         <RelatedArticles articles={relatedArticles} />
