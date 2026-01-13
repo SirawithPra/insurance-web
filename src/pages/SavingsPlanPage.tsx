@@ -63,7 +63,7 @@ export function SavingsPlanPage() {
               <div className="flex items-center gap-2">
                 <Wallet className="text-amber-500" size={20} />
                 <h3 className="font-bold text-slate-700 uppercase tracking-wider text-xs">
-                  คู่สมรสภาษี
+                  ข้อมูลภาษีเบื้องต้น
                 </h3>
               </div>
 
@@ -75,7 +75,7 @@ export function SavingsPlanPage() {
                 <div className="grid grid-cols-3 gap-2">
                   {[
                     { value: 'none', label: 'ไม่เคย' },
-                    { value: 'some', label: 'เคล็ดเคล้น' },
+                    { value: 'some', label: 'พอสมควร' },
                     { value: 'high', label: 'เยอะมาก' }
                   ].map((option) => (
                     <button
@@ -141,7 +141,7 @@ export function SavingsPlanPage() {
             {/* Profile Settings */}
             <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-6">
               <h3 className="font-bold text-slate-700 uppercase tracking-wider text-xs">
-                เลือกสมุดศุภักษา
+                ปรับแต่งแผนของคุณ
               </h3>
 
               <div className="space-y-4">
@@ -256,6 +256,14 @@ export function SavingsPlanPage() {
 
             {/* Comparison Chart */}
             <ComparisonChart data={savingCalcs.data} breakEvenYear={savingCalcs.breakEvenYear} />
+
+            {/* AIA Reference */}
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center">
+              <p className="text-xs text-slate-600">
+                <span className="font-bold">ข้อมูลอ้างอิง:</span> การคำนวณและผลประโยชน์จำลองจากหลักการของแผนประกัน{' '}
+                <span className="font-bold text-red-600">AIA Endowment 25/25 (Non-Par)</span>
+              </p>
+            </div>
 
             {/* Pros & Cons */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

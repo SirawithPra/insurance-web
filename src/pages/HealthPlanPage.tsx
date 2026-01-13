@@ -101,6 +101,15 @@ export function HealthPlanPage() {
               </div>
             </div>
 
+            {/* AIA Reference */}
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center">
+              <p className="text-xs text-slate-600">
+                <span className="font-bold">ข้อมูลอ้างอิง:</span> แผนจำลองจากหลักการของ{' '}
+                <span className="font-bold text-red-600">AIA Health Happy</span> และ{' '}
+                <span className="font-bold text-red-600">AIA Infinite Care</span>
+              </p>
+            </div>
+
             {/* Coverage Details */}
             <div className="grid grid-cols-3 gap-4">
               <div className="bg-pink-50 border border-pink-200 rounded-2xl p-6 text-center">
@@ -134,7 +143,7 @@ export function HealthPlanPage() {
 
             {/* Age Slider */}
             <div className="bg-white rounded-3xl border border-slate-200 p-8">
-              <h4 className="font-black text-slate-900 mb-4">ภาวะสุดถาวร (เบี้ยต่อปี)</h4>
+              <h4 className="font-black text-slate-900 mb-4">คำนวณเบี้ยตามอายุ (เบี้ยต่อปี)</h4>
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-bold text-slate-600">อายุ</span>

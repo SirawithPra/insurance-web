@@ -217,7 +217,7 @@ export function ArticlesPage() {
                   )}
 
                   {/* Read More */}
-                  <button className="w-full mt-4 px-4 py-2 bg-linear-to-r from-purple-600 to-indigo-600 text-white rounded-xl font-bold text-sm hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                  <button className="w-full mt-4 px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl font-bold text-sm hover:shadow-lg transition-all flex items-center justify-center gap-2">
                     <TrendingUp size={16} />
                     ดูรายละเอียด Case Study
                   </button>
@@ -236,7 +236,7 @@ export function ArticlesPage() {
         />
 
         {/* Info Box */}
-        <div className="bg-linear-to-r from-purple-50 to-indigo-50 rounded-3xl p-8 border-2 border-purple-200 text-center max-w-3xl mx-auto">
+        <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-3xl p-8 border-2 border-purple-200 text-center max-w-3xl mx-auto">
           <p className="text-slate-700 mb-4">
             ต้องการคำปรึกษาเฉพาะตัว? ทีมงานพร้อมวิเคราะห์และแนะนำแผนประกันที่เหมาะกับคุณ
           </p>
