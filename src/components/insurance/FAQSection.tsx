@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 import { FAQ } from '../../types';
 
@@ -51,7 +51,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({
                   {faq.question}
                 </span>
                 <ChevronDown
-                  className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform duration-200 ${
+                  className={`w-5 h-5 text-gray-500 shrink-0 transition-transform duration-200 ${
                     openIndex === index ? 'transform rotate-180' : ''
                   }`}
                 />

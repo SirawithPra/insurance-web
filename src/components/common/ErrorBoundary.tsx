@@ -1,4 +1,4 @@
-import React, { Component, ErrorInfo, ReactNode } from 'react';
+import { Component, ErrorInfo, ReactNode } from 'react';
 import { AlertTriangle } from 'lucide-react';
 
 interface Props {
@@ -57,7 +57,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
             <button
               onClick={() => window.location.reload()}
-              className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-2xl font-black hover:from-red-700 hover:to-red-800 transition-all"
+              className="w-full bg-linear-to-r from-red-600 to-red-700 text-white py-3 rounded-2xl font-black hover:from-red-700 hover:to-red-800 transition-all"
             >
               รีเฟรชหน้าเว็บ
             </button>

@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MainLayout } from '../components/layout/MainLayout';
 import { SEOHead } from '../components/layout/SEOHead';
 import { InlineConsultCTA } from '../components/cta/InlineConsultCTA';
 import { FAQSection } from '../components/insurance/FAQSection';
-import { TestimonialsSection } from '../components/insurance/TestimonialsSection';
+// import { TestimonialsSection } from '../components/insurance/TestimonialsSection';
 import { RelatedArticles } from '../components/insurance/RelatedArticles';
 import { SEO_CONFIG } from '../constants/seo';
 import { ROUTES } from '../constants/routes';
-import { HEALTH_PLANS, HEALTH_PLAN_FAQS, HEALTH_PLAN_TESTIMONIALS, ARTICLES } from '../constants';
+import { HEALTH_PLANS, HEALTH_PLAN_FAQS, ARTICLES } from '../constants';
 import { getRelatedArticles } from '../utils';
 import { Shield, Bed, Stethoscope, AlertCircle, CheckCircle2, Check } from 'lucide-react';
 import { formatCurrency } from '../utils/formatters';
@@ -77,7 +77,7 @@ export function HealthPlanPage() {
                       </p>
                     </div>
                     {isSelected && (
-                      <Check className="text-red-500 flex-shrink-0" size={24} />
+                      <Check className="text-red-500 shrink-0" size={24} />
                     )}
                   </div>
                   <p className={`text-xs mt-2 ${isSelected ? 'text-slate-300' : 'text-slate-500'}`}>
@@ -190,7 +190,7 @@ export function HealthPlanPage() {
         <FAQSection faqs={HEALTH_PLAN_FAQS} />
 
         {/* Testimonials Section */}
-        <TestimonialsSection testimonials={HEALTH_PLAN_TESTIMONIALS} />
+        {/* <TestimonialsSection testimonials={HEALTH_PLAN_TESTIMONIALS} /> */}
 
         {/* Related Articles */}
         <RelatedArticles articles={relatedArticles} />

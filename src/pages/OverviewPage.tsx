@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useNavigate } from 'react-router-dom';
 import { MainLayout } from '../components/layout/MainLayout';
 import { InsuranceCard } from '../components/insurance/InsuranceCard';
@@ -35,18 +35,23 @@ export function OverviewPage() {
         path={ROUTES.OVERVIEW}
       />
 
-      <div className="space-y-12 animate-in fade-in slide-in-from-bottom-4">
+      <div className="space-y-16 md:space-y-24 animate-in fade-in slide-in-from-bottom-4">
         {/* Hero Section */}
-        <div className="text-center max-w-4xl mx-auto space-y-6">
-          <h1 className="text-4xl md:text-6xl font-black text-slate-900 leading-tight">
-            เข้าใจ<span className="text-red-600">ประกัน</span>ด้วยตัวเอง
-            <br />
-            ก่อนคุยกับตัวแทน
-          </h1>
-          <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            จำลองผลลัพธ์ เปรียบเทียบแผน และเข้าใจข้อดีข้อเสียของประกันแต่ละประเภท
-            ด้วยข้อมูลที่โปร่งใสและเข้าใจง่าย
-          </p>
+        <div className="relative text-center max-w-5xl mx-auto pt-8 md:pt-12">
+          {/* Background Glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-red-100/60 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+          <div className="space-y-8">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-slate-900 leading-tight tracking-tight">
+              เข้าใจ<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">ประกัน</span>ด้วยตัวเอง
+              <br className="hidden md:block" />
+              <span className="md:text-5xl lg:text-6xl text-slate-700">ก่อนคุยกับตัวแทน</span>
+            </h1>
+            <p className="text-lg md:text-2xl text-slate-600 leading-relaxed max-w-3xl mx-auto font-medium">
+              จำลองผลลัพธ์ เปรียบเทียบแผน และเข้าใจข้อดีข้อเสียของประกันแต่ละประเภท
+              ด้วยข้อมูลที่โปร่งใสและเข้าใจง่าย
+            </p>
+          </div>
         </div>
 
         {/* Insurance Types Grid */}

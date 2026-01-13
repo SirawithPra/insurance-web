@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Phone, MessageCircle, X, Sparkles } from 'lucide-react';
 
 export function FloatingCTA() {

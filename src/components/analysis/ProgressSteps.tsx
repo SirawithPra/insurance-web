@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Check } from 'lucide-react';
 import { STEP_DESCRIPTIONS, ACHIEVEMENT_MESSAGES } from '../../constants/methodology';
 
@@ -33,7 +33,7 @@ export const ProgressSteps: React.FC<ProgressStepsProps> = ({
       <div className="relative">
         <div className="absolute top-5 left-0 right-0 h-1 bg-slate-200">
           <div
-            className="h-full bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-500 ease-out"
+            className="h-full bg-linear-to-r from-blue-500 to-purple-600 transition-all duration-500 ease-out"
             style={{ width: `${((currentStep - 1) / (steps.length - 1)) * 100}%` }}
           />
         </div>
@@ -56,7 +56,7 @@ export const ProgressSteps: React.FC<ProgressStepsProps> = ({
                 <div
                   className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg border-4 transition-all duration-300 ${
                     isCompleted
-                      ? `bg-gradient-to-br ${colorMap[step.color]} text-white border-white shadow-lg scale-110`
+                      ? `bg-linear-to-br ${colorMap[step.color]} text-white border-white shadow-lg scale-110`
                       : isCurrent
                       ? `bg-white text-${step.color}-600 border-${step.color}-500 shadow-xl scale-125 animate-pulse`
                       : 'bg-slate-100 text-slate-400 border-slate-200'
@@ -95,7 +95,7 @@ export const ProgressSteps: React.FC<ProgressStepsProps> = ({
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-full">
           <div className="w-32 h-2 bg-slate-200 rounded-full overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-500"
+              className="h-full bg-linear-to-r from-blue-500 to-purple-600 transition-all duration-500"
               style={{ width: `${((currentStep) / steps.length) * 100}%` }}
             />
           </div>

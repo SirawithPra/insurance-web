@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useParams, useNavigate } from 'react-router-dom';
 import { MainLayout } from '../components/layout/MainLayout';
 import { SEOHead } from '../components/layout/SEOHead';
@@ -41,14 +41,14 @@ export function ArticleDetailPage() {
         {/* Back Button */}
         <button
           onClick={() => navigate(ROUTES.ARTICLES)}
-          className="flex items-center gap-2 text-purple-600 hover:text-purple-700 font-bold mb-8 group"
+          className="inline-flex items-center gap-2 text-slate-600 hover:text-purple-600 font-bold mb-8 group bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all"
         >
           <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
           กลับไปคลังความรู้
         </button>
 
         {/* Article */}
-        <article className="bg-white rounded-3xl border border-slate-200 overflow-hidden">
+        <article className="bg-white rounded-3xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
           {/* Header Image */}
           {article.image && (
             <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200">
@@ -125,7 +125,7 @@ export function ArticleDetailPage() {
         </article>
 
         {/* CTA */}
-        <div className="mt-12 bg-gradient-to-r from-purple-600 to-purple-700 rounded-3xl p-8 md:p-12 text-white text-center">
+        <div className="mt-12 bg-linear-to-r from-purple-600 to-purple-700 rounded-3xl p-8 md:p-12 text-white text-center">
           <h3 className="text-2xl font-black mb-4">
             มีคำถามเพิ่มเติม?
           </h3>

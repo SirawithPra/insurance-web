@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Star, Send, CheckCircle, User } from 'lucide-react';
 
 interface TestimonialFormProps {
@@ -76,14 +76,14 @@ export const TestimonialForm: React.FC<TestimonialFormProps> = ({
   }
 
   return (
-    <div className={`bg-white rounded-3xl border-2 border-slate-200 p-8 ${className}`}>
+    <div className={`bg-white rounded-3xl border border-slate-200 shadow-xl p-8 ${className}`}>
       <div className="flex items-center gap-3 mb-6">
         <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
           <User className="text-purple-600" size={24} />
         </div>
         <div>
           <h3 className="text-2xl font-black text-slate-900">แบ่งปันประสบการณ์</h3>
-          <p className="text-sm text-slate-600">ช่วยให้คนอื่นเข้าใจประกัน���ด้ดีขึ้น</p>
+          <p className="text-sm text-slate-600">ช่วยให้คนอื่นเข้าใจประกันได้ดีขึ้น</p>
         </div>
       </div>
 
@@ -99,7 +99,7 @@ export const TestimonialForm: React.FC<TestimonialFormProps> = ({
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             placeholder="ระบุชื่อหรือนามแฝง"
-            className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-purple-500 focus:outline-none transition-colors"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-50 focus:outline-none transition-all"
           />
         </div>
 
@@ -113,7 +113,7 @@ export const TestimonialForm: React.FC<TestimonialFormProps> = ({
             value={formData.occupation}
             onChange={(e) => setFormData({ ...formData, occupation: e.target.value })}
             placeholder="เช่น พนักงานบริษัท, ธุรกิจส่วนตัว"
-            className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-purple-500 focus:outline-none transition-colors"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-50 focus:outline-none transition-all"
           />
         </div>
 
@@ -125,7 +125,7 @@ export const TestimonialForm: React.FC<TestimonialFormProps> = ({
           <select
             value={formData.insuranceType}
             onChange={(e) => setFormData({ ...formData, insuranceType: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-purple-500 focus:outline-none transition-colors"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-50 focus:outline-none transition-all"
           >
             <option value="general">ทั่วไป</option>
             <option value="life">ประกันชีวิต</option>
@@ -175,7 +175,7 @@ export const TestimonialForm: React.FC<TestimonialFormProps> = ({
             onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
             placeholder="แบ่งปันประสบการณ์หรือความคิดเห็นของคุณ..."
             rows={5}
-            className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-purple-500 focus:outline-none transition-colors resize-none"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-50 focus:outline-none transition-all resize-none"
           />
           <p className="text-xs text-slate-500 mt-2">
             ความคิดเห็นจะถูกตรวจสอบก่อนแสดงผล

@@ -48,7 +48,7 @@ Branch naming conventions:
 #### Component Structure
 
 ```tsx
-import React from 'react';
+
 import { ComponentProps } from '../types';
 
 interface MyComponentProps {

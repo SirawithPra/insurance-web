@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MainLayout } from '../components/layout/MainLayout';
 import { SEOHead } from '../components/layout/SEOHead';
 import { ComparisonChart } from '../components/insurance/ComparisonChart';
 import { InlineConsultCTA } from '../components/cta/InlineConsultCTA';
-import { FAQSection } from '../components/insurance/FAQSection';
-import { TestimonialsSection } from '../components/insurance/TestimonialsSection';
+import { FAQSection } from '../components/insurance/FAQSection'; 
+// import { TestimonialsSection } from '../components/insurance/TestimonialsSection';
 import { RelatedArticles } from '../components/insurance/RelatedArticles';
 import { useSavingsCalculation } from '../hooks/useInsuranceCalculations';
 import { useTaxOptimizer } from '../hooks/useTaxOptimizer';
 import { SEO_CONFIG } from '../constants/seo';
 import { ROUTES } from '../constants/routes';
-import { TAX_MINDSETS, SAVINGS_PLAN_FAQS, SAVINGS_PLAN_TESTIMONIALS, ARTICLES } from '../constants';
+import { TAX_MINDSETS, SAVINGS_PLAN_FAQS, ARTICLES } from '../constants';
 import { getRelatedArticles } from '../utils';
 import type { TaxExpense, DeductionLevel } from '../types/insurance';
 import { Wallet, TrendingUp, Target, CheckCircle2, AlertCircle } from 'lucide-react';
@@ -18,11 +18,11 @@ import { formatCurrency } from '../utils/formatters';
 
 export function SavingsPlanPage() {
   // State
-  const [age, setAge] = useState(35);
+  const [age, setAge] = useState(30);
   const [sumAssured, setSumAssured] = useState(1000000);
-  const [investYield, setInvestYield] = useState(5.0);
+  const [investYield, setInvestYield] = useState(2.0);
   const [taxMindset, setTaxMindset] = useState('balance');
-  const [taxExp, setTaxExp] = useState<TaxExpense>('some');
+  const [taxExp, setTaxExp] = useState<TaxExpense>("none");
   const [hasDeduction, setHasDeduction] = useState<DeductionLevel>('some');
 
   // Get tax rate from selected mindset
@@ -295,7 +295,7 @@ export function SavingsPlanPage() {
         <FAQSection faqs={SAVINGS_PLAN_FAQS} />
 
         {/* Testimonials Section */}
-        <TestimonialsSection testimonials={SAVINGS_PLAN_TESTIMONIALS} />
+        {/* <TestimonialsSection testimonials={SAVINGS_PLAN_TESTIMONIALS} /> */}
 
         {/* Related Articles */}
         <RelatedArticles articles={relatedArticles} />
